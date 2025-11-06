@@ -146,9 +146,12 @@ header .navbar li a:hover {
 }
 
 @keyframes animate {
-    0%,100% {
+
+    0%,
+    100% {
         transform: translateY(-30px);
     }
+
     50% {
         transform: translateY(30px);
     }
@@ -157,7 +160,7 @@ header .navbar li a:hover {
 /* Categorias */
 .tituloCategoria {
     position: relative;
-    width: 100% ;
+    width: 100%;
     bottom: 50px;
     display: flex;
     justify-content: center;
@@ -169,7 +172,295 @@ header .navbar li a:hover {
     font-size: 2.5em;
     font-weight: 800;
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-    font-family: Rammetto One, cursive;
+    font-family: 'Rammetto One', cursive;
+}
 
+.categoria .tienda {
+    position: relative;
+    top: -270px;
+    width: 100%;
+    height: 55vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 160px;
+}
+
+.categoria .tienda .card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    margin: 50px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all ease;
+}
+
+.categoria .tienda .card .contenidoCard {
+    text-align: center;
+}
+
+.categoria .tienda .card .imgCandy {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+}
+
+.categoria .tienda .card .imgGhost {
+    width: 350;
+    height: 350px;
+    padding: 10px;
+}
+
+.categoria .tienda .card .imgPumpkin {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+}
+
+.categoria .tienda .card .contenidoCard span {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #945cb4;
+    font-weight: 800;
+}
+
+.categoria .tienda .card .contenidoCard p {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.categoria .tienda .card:hover {
+    background-color: rgba(148, 92, 180, 0.2);
+    box-shadow: 0 5px 15px rgba(148, 92, 180, 0.4);
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.categoria .bgColor:nth-child(1) {
+    top: 1500px;
+    left: -150px;
+    width: 450px;
+    height: 450px;
+    background: #945cb4;
+    border-radius: 50%;
+}
+
+.categoria .bgColor:nth-child(2) {
+    top: 500px;
+    right: -160rem;
+    width: 450px;
+    height: 450px;
+    background: #945cb4;
+    border-radius: 50%;
+}
+
+/* Más vendidos */
+
+.tituloVendidos {
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloVendidos h2 {
+    color: #945cb4;
+    font-family: 'Rammetto One', cursive;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 
 }
+
+.vendidos {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+
+}
+
+.vendidos .tienda {
+    position: relative;
+    top: -270px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding: 160px;
+}
+
+.vendidos .tienda .card {
+    position: relative;
+    width: 350px;
+    height: 420px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(114, 57, 114, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 12px 89px 15px rgba(22, 22, 22, 1) inset;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vendidos .tienda .card .contenidoCard {
+    text-align: center;
+}
+
+.vendidos .tienda .card .contenidoCard span {
+    font-size: 1.3em;
+    color: #945cb4;
+    font-weight: 800;
+}
+
+.vendidos .tienda .card .contenidoCard p {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1em;
+    margin: 5px 0 20px 0;
+}
+
+.vendidos .tienda .card .contenidoCard a {
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #945cb4;
+    padding: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.vendidos .tienda .card .contenidoCard a:hover {
+    background-color: #7a3e8a;
+    box-shadow: 0 5px 15px rgba(122, 62, 138, 0.4);
+}
+
+.vendidos .tienda .card .imgLollipop {
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.vendidos .tienda .card .imgTombstone {
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.vendidos .tienda .card .imgStrawman {
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.vendidos .tienda .card:hover img {
+    transform: translateY(-10px);
+
+}
+
+.vendidos .tienda .card .contenidoCard a:hover {
+    background-color: #744494;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logoHw {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+footer .logoHw .logo {
+    color: #945cb4;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+}
+
+footer .logoHw p {
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+footer .sobreNosotros ,
+footer .redesSociales {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #945cb4;
+}
+
+footer .sobreNosotros p,
+footer .redesSociales p {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+footer .sobreNosotros a,
+footer .redesSociales a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    transition: 0.3s;
+}
+
+footer .sobreNosotros a:hover,
+footer .redesSociales a:hover {
+    color: #945cb4;
+}
+
+
+
+footer .redesSociales a i {
+    margin-right: 5px;
+}
+
+.copyright {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}   
+
+
